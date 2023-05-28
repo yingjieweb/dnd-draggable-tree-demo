@@ -1,0 +1,166 @@
+[
+  {
+      "id": 7,
+      "name": "tester1",
+      "status": 1,
+      "rank": 3,
+      "children": [
+          {
+              "id": 685720130,
+              "name": "tester1-1",
+              "categoryId": 7,
+              "terminal": "2",
+              "beChildRole": false,
+              "parentId": null,
+              "status": 1,
+              "rank": 2,
+              "disabled": false,
+              "children": [
+                  {
+                      "id": 686895726,
+                      "name": "tester1-1-1",
+                      "categoryId": 7,
+                      "terminal": "2",
+                      "beChildRole": true,
+                      "parentId": 685720130,
+                      "status": 1,
+                      "rank": 1,
+                      "disabled": false,
+                      "children": []
+                  },
+                  {
+                      "id": 686895877,
+                      "name": "tester1-1-2",
+                      "categoryId": 7,
+                      "terminal": "2,1",
+                      "beChildRole": true,
+                      "parentId": 685720130,
+                      "status": 1,
+                      "rank": 2,
+                      "disabled": false,
+                      "children": []
+                  }
+              ]
+          },
+          {
+              "id": 686895657,
+              "name": "tester1-2",
+              "categoryId": 7,
+              "terminal": "2,1",
+              "beChildRole": false,
+              "parentId": null,
+              "status": 1,
+              "rank": 3,
+              "disabled": false,
+              "children": [
+                  {
+                      "id": 686895796,
+                      "name": "tester1-2-1",
+                      "categoryId": 7,
+                      "terminal": "2",
+                      "beChildRole": true,
+                      "parentId": 686895657,
+                      "status": 1,
+                      "rank": 1,
+                      "disabled": false,
+                      "children": []
+                  },
+                  {
+                      "id": 686896247,
+                      "name": "tester1-2-2",
+                      "categoryId": 7,
+                      "terminal": "2",
+                      "beChildRole": true,
+                      "parentId": 686895657,
+                      "status": 1,
+                      "rank": 2,
+                      "disabled": false,
+                      "children": []
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "id": 686896174,
+      "name": "tester2",
+      "status": 1,
+      "rank": 4,
+      "children": [
+          {
+              "id": 686896323,
+              "name": "tester2-1",
+              "categoryId": 686896174,
+              "terminal": "2",
+              "beChildRole": false,
+              "parentId": null,
+              "status": 1,
+              "rank": 1,
+              "disabled": false,
+              "children": [
+                  {
+                      "id": 686896457,
+                      "name": "tester2-1-1",
+                      "categoryId": 686896174,
+                      "terminal": "2",
+                      "beChildRole": true,
+                      "parentId": 686896323,
+                      "status": 1,
+                      "rank": 1,
+                      "disabled": false,
+                      "children": []
+                  },
+                  {
+                      "id": 686896522,
+                      "name": "tester2-1-2",
+                      "categoryId": 686896174,
+                      "terminal": "2",
+                      "beChildRole": true,
+                      "parentId": 686896323,
+                      "status": 1,
+                      "rank": 2,
+                      "disabled": false,
+                      "children": []
+                  }
+              ]
+          },
+          {
+              "id": 686896388,
+              "name": "tester2-2",
+              "categoryId": 686896174,
+              "terminal": "2",
+              "beChildRole": false,
+              "parentId": null,
+              "status": 1,
+              "rank": 2,
+              "disabled": false,
+              "children": [
+                  {
+                      "id": 686896590,
+                      "name": "tester2-2-1",
+                      "categoryId": 686896174,
+                      "terminal": "2",
+                      "beChildRole": true,
+                      "parentId": 686896388,
+                      "status": 1,
+                      "rank": 1,
+                      "disabled": false,
+                      "children": []
+                  },
+                  {
+                      "id": 686896655,
+                      "name": "tester2-2-2",
+                      "categoryId": 686896174,
+                      "terminal": "2",
+                      "beChildRole": true,
+                      "parentId": 686896388,
+                      "status": 1,
+                      "rank": 2,
+                      "disabled": false,
+                      "children": []
+                  }
+              ]
+          }
+      ]
+  }
+]
