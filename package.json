@@ -2,6 +2,7 @@
   "name": "dnd-draggable-tree-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/dnd-draggable-tree-demo/",
   "dependencies": {
     "@dnd-kit/core": "^6.0.8",
     "@dnd-kit/sortable": "^7.0.2",
