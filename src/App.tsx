@@ -173,6 +173,11 @@ const App: React.FC = () => {
       return roleTree;
     };
     setRoleTree((val: TestDataArray) => {
+      if (targetParentId === 0) {
+        return rankList.map((item) => {
+          return roleTree.filter((it) => it.id === item)[0];
+        });
+      }
       return val.map((item) => {
         return traverse(item, rankList);
       });
