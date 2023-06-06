@@ -5,7 +5,7 @@ import { DownOutlined } from "@ant-design/icons";
 // types
 import { TestDataItem } from "../../App";
 // styles
-import "./style.css";
+import "./style.scss";
 import { CSS } from "@dnd-kit/utilities";
 import dragIcon from "../../assets/menu.svg";
 

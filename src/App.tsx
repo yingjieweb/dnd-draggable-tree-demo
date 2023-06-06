@@ -7,7 +7,7 @@ import { ExclamationCircleFilled } from "@ant-design/icons";
 // constants
 import TEST_DATA from "./db/data.json";
 // styles
-import "./APP.css";
+import "./APP.scss";
 
 // types
 export type TestDataItem = {

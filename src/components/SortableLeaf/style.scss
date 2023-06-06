@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-items: center;
+  line-height: 60px;
+  border-bottom: 1px solid #f0f0f0;
+  .collapseBtn {
+    width: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .dragBtn {
+    width: 16px;
+    margin-right: 10px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    .dragImg {
+      position: relative;
+      bottom: 1.5px;
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+}
