@@ -1,7 +1,7 @@
 import React, { ReactNode, useState } from "react";
 import { useSortable } from "@dnd-kit/sortable";
 // components
-import { DownOutlined, UpOutlined } from "@ant-design/icons";
+import { DownOutlined } from "@ant-design/icons";
 // types
 import { TestDataItem } from "../../App";
 // styles
@@ -15,7 +15,6 @@ type IPropsType = {
   inferiorList?: ReactNode;
   isSortable?: boolean;
   initialCollapse: boolean;
-  ifHasCollapseBtn?: boolean;
   activeStyle?: Record<string, string | number>;
   render: (arg0: TestDataItem) => void;
 };
@@ -28,7 +27,6 @@ const SortableLeaf: React.FC<IPropsType> = (props) => {
     inferiorList,
     isSortable,
     initialCollapse,
-    ifHasCollapseBtn,
     render,
     activeStyle,
   } = props;
@@ -57,48 +55,28 @@ const SortableLeaf: React.FC<IPropsType> = (props) => {
   return (
     <div ref={setNodeRef} style={style}>
       <div className="header">
-        {Array.isArray(data?.children) && data?.children?.length > 0 ? (
-          <span
-            style={{
-              marginRight: 10,
-              cursor: "pointer",
-            }}
-          >
-            {!isCollapse && (
-              <DownOutlined
-                onClick={() => {
-                  setIsCollapse(!isCollapse);
-                }}
-              />
-            )}
-            {isCollapse && (
-              <UpOutlined
-                onClick={() => {
-                  setIsCollapse(!isCollapse);
-                }}
-              />
-            )}
-          </span>
-        ) : (
-          <span
-            style={{
-              width: ifHasCollapseBtn ? "14px" : 0,
-              marginRight: 10,
-            }}
-          ></span>
-        )}
-        <>
+        <div className="collapseBtn">
+          {Array.isArray(data?.children) && data?.children?.length > 0 && (
+            <DownOutlined
+              rotate={isCollapse ? 180 : 0}
+              onClick={() => {
+                setIsCollapse(!isCollapse);
+              }}
+            />
+          )}
+        </div>
+        <div className="dragBtn">
           {isSortable && (
             <img
-              className="dragger"
+              className="dragImg"
               src={dragIcon}
               {...attributes}
               {...listeners}
-              alt="dragger"
+              alt="dragHandler"
             />
           )}
-          {render({ ...data })}
-        </>
+        </div>
+        <>{render({ ...data })}</>
       </div>
       {inferiorList && isCollapse && (
         <div style={{ marginLeft: 25 }}>{inferiorList}</div>

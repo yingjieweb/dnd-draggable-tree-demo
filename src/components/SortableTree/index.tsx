@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   DndContext,
   closestCenter,
@@ -53,15 +53,6 @@ const SortableTree: React.FC<IPropsType> = (props) => {
     zIndex: 9,
   };
 
-  // computed
-  const ifHasCollapseBtn = useMemo(() => {
-    if (list.length) {
-      const res = list.filter((item: TestDataItem) => item.children.length);
-      return res.length > 0;
-    }
-    return false;
-  }, [list]);
-
   // watch
   useEffect(() => {
     if (data) {
@@ -107,7 +98,6 @@ const SortableTree: React.FC<IPropsType> = (props) => {
             data={item}
             isSortable={isSortable}
             initialCollapse
-            ifHasCollapseBtn={ifHasCollapseBtn}
             render={render}
             inferiorList={
               item.children ? (
