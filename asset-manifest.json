@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/dnd-draggable-tree-demo/static/css/main.3808a43a.css",
+    "main.js": "/dnd-draggable-tree-demo/static/js/main.a27a857a.js",
+    "static/js/787.2a7978cd.chunk.js": "/dnd-draggable-tree-demo/static/js/787.2a7978cd.chunk.js",
+    "static/media/menu.svg": "/dnd-draggable-tree-demo/static/media/menu.8f4532246b9064ac8feb9f8d43a9073c.svg",
+    "index.html": "/dnd-draggable-tree-demo/index.html",
+    "main.3808a43a.css.map": "/dnd-draggable-tree-demo/static/css/main.3808a43a.css.map",
+    "main.a27a857a.js.map": "/dnd-draggable-tree-demo/static/js/main.a27a857a.js.map",
+    "787.2a7978cd.chunk.js.map": "/dnd-draggable-tree-demo/static/js/787.2a7978cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3808a43a.css",
+    "static/js/main.a27a857a.js"
+  ]
+}
